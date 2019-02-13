@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using BackendCapstone.Models;
+using BeerRun.Models;
 
 namespace BeerRun.Areas.Identity.Pages.Account
 {
