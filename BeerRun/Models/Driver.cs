@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace BeerRun.Models
 {
     public class Driver
@@ -25,7 +26,8 @@ namespace BeerRun.Models
         public int Age { get; set; }
 
         [Required]
-        public int PhoneNumber { get; set; }
+        [Display(Description = "###-###-####")] 
+        public string PhoneNumber { get; set; }
 
         [Required]
         public string Vehicle { get; set; }

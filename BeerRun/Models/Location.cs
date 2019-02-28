@@ -18,6 +18,6 @@ namespace BeerRun.Models
         public string Address { get; set; }
 
         [Required]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeerRun.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190213223352_InitialCreate")]
+    [Migration("20190228190507_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,7 +101,8 @@ namespace BeerRun.Migrations
                     b.Property<string>("LastName")
                         .IsRequired();
 
-                    b.Property<int>("PhoneNumber");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
 
                     b.Property<string>("Vehicle")
                         .IsRequired();
@@ -123,7 +124,8 @@ namespace BeerRun.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<int>("PhoneNumber");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
 
                     b.HasKey("LocationId");
 

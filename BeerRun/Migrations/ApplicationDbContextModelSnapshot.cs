@@ -99,7 +99,8 @@ namespace BeerRun.Migrations
                     b.Property<string>("LastName")
                         .IsRequired();
 
-                    b.Property<int>("PhoneNumber");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
 
                     b.Property<string>("Vehicle")
                         .IsRequired();
@@ -121,7 +122,8 @@ namespace BeerRun.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<int>("PhoneNumber");
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
 
                     b.HasKey("LocationId");
 

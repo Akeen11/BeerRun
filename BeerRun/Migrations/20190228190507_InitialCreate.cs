@@ -61,7 +61,7 @@ namespace BeerRun.Migrations
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: false),
                     Age = table.Column<int>(nullable: false),
-                    PhoneNumber = table.Column<int>(nullable: false),
+                    PhoneNumber = table.Column<string>(nullable: false),
                     Vehicle = table.Column<string>(nullable: false),
                     IsOnDelivery = table.Column<bool>(nullable: true)
                 },
@@ -78,7 +78,7 @@ namespace BeerRun.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: false),
                     Address = table.Column<string>(nullable: false),
-                    PhoneNumber = table.Column<int>(nullable: false)
+                    PhoneNumber = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
