@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BeerRun.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190228190507_InitialCreate")]
+    [Migration("20190305194927_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
